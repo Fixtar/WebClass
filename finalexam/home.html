@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our University</title>
+    <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./home.css" />
   </head>
 
   <body class="font-sans">
+    <!-- 헤더 -->
     <header class="header">
       <div class="logo-container">
         <div class="logo"></div>
@@ -40,26 +42,95 @@
       </nav>
     </header>
 
-    <main class="flex-grow">
-      <section class="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-white">
-        <div class="container px-4 md:px-6">
-          <h2
-            class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-[#0c2e86] mb-8"
+    <!-- 이미지 캐러셀 -->
+    <section class="carousel">
+      <div class="carousel-container">
+        <div class="carousel-slides">
+          <img
+            alt="Carousel Image 1"
+            src="./resources/catholicMap.png"
+            class="carousel-image"
+          />
+          <img
+            alt="Carousel Image 2"
+            src="/placeholder.svg"
+            class="carousel-image"
+          />
+          <img
+            alt="Carousel Image 3"
+            src="/placeholder.svg"
+            class="carousel-image"
+          />
+        </div>
+        <div class="carousel-indicators">
+          <span class="indicator"></span>
+          <span class="indicator"></span>
+          <span class="indicator"></span>
+        </div>
+        <button class="carousel-button-left">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="arrow-icon"
           >
-            Articles
-          </h2>
+            <path d="m15 18-6-6 6-6"></path>
+          </svg>
+        </button>
+        <button class="carousel-button-right">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="arrow-icon"
+          >
+            <path d="m9 18 6-6-6-6"></path>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="quick-links">
+      <h2 class="quick-links-title">Quick Links</h2>
+      <div class="links-grid">
+        <a class="link-item" href="#" rel="ugc">Link 1</a>
+        <a class="link-item" href="#" rel="ugc">Link 2</a>
+        <a class="link-item" href="#" rel="ugc">Link 3</a>
+        <a class="link-item" href="#" rel="ugc">Link 4</a>
+        <a class="link-item" href="#" rel="ugc">Link 5</a>
+        <a class="link-item" href="#" rel="ugc">Link 6</a>
+      </div>
+    </section>
+
+    <main class="main-content">
+      <section class="articles-section">
+        <div class="container">
+          <h2 class="section-title">Articles</h2>
           <!-- ... Rest of your content ... -->
         </div>
       </section>
     </main>
 
-    <footer class="w-full bg-[#0c2e86] text-white py-6">
-      <div class="container px-4 md:px-6 flex items-center justify-between">
-        <div class="text-lg font-bold">© 2023 Our University</div>
-        <nav class="flex space-x-4">
-          <a class="hover:text-zinc-50" href="#">Privacy Policy</a>
-          <a class="hover:text-zinc-50" href="#">Terms of Service</a>
-          <a class="hover:text-zinc-50" href="#">Contact Us</a>
+    <!-- 푸터 -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-text">© 2023 Our University</div>
+        <nav class="footer-nav">
+          <a class="footer-link" href="#">Privacy Policy</a>
+          <a class="footer-link" href="#">Terms of Service</a>
+          <a class="footer-link" href="#">Contact Us</a>
         </nav>
       </div>
     </footer>
