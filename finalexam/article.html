@@ -4,144 +4,144 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our University</title>
-    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./layout.css" />
+    <link rel="stylesheet" href="./article.css" />
   </head>
   <body>
-    <div class="w-full flex flex-col min-h-screen">
-      <header>
-        <div class="flex items-center space-x-4">
-          <div class="h-10 w-10 bg-green-500"></div>
-          <h1 class="text-2xl font-bold">Our University</h1>
-        </div>
-        <nav class="flex items-center space-x-4">
-          <a href="#">Home</a>
-          <a href="#">App 1</a>
-          <a href="#">App 2</a>
-          <button>English</button>
-        </nav>
-      </header>
-      <main>
-        <section class="w-full py-12 md:py-24 lg:py-32 bg-white text-black">
-          <div class="container px-4 md:px-6 lg:px-8">
-            <a
-              class="inline-flex items-center text-sm font-medium hover:underline"
-              href="#"
+    <header class="header">
+      <div class="logo-container">
+        <div class="logo"></div>
+        <h1 class="title">Our University</h1>
+      </div>
+      <nav class="navigation">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#">App 1</a>
+        <a class="nav-link" href="#">App 2</a>
+        <button class="nav-button">
+          <button class="language-selector">
+            <span>English</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon"
+              aria-hidden="true"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="h-5 w-5 mr-1"
-              >
-                <path d="m12 19-7-7 7-7"></path>
-                <path d="M19 12H5"></path>
-              </svg>
-              Back to Articles
-            </a>
-            <article
-              class="prose prose-zinc mt-8 max-w-none mx-auto lg:max-w-3xl dark:prose-invert"
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+          </button>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="w-full py-12 md:py-24 lg:py-32 bg-white text-black">
+        <div class="container px-4 md:px-6 lg:px-8">
+          <a class="back-link" href="#">
+            <svg
+              class="back-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
             >
-              <div class="space-y-2 not-prose">
-                <h1
-                  class="text-4xl font-extrabold tracking-tight lg:text-5xl lg:leading-[3.5rem]"
-                >
-                  The Future of AI and Machine Learning
-                </h1>
-                <p class="flex items-center space-x-2">
-                  <span>By John Doe</span>
-                  <span>|</span>
-                  <span>Published on November 7, 2023</span>
-                </p>
-              </div>
-              <p>
-                Artificial Intelligence (AI) and Machine Learning (ML) are two
-                very hot buzzwords right now, and often seem to be used
-                interchangeably.
+              <path d="m12 19-7-7 7-7"></path>
+              <path d="M19 12H5"></path>
+            </svg>
+            Back to Articles
+          </a>
+          <article class="article-content">
+            <div class="article-header">
+              <h1 class="article-title">
+                The Future of AI and Machine Learning
+              </h1>
+              <p class="article-meta">
+                <span>By John Doe</span>
+                <span class="separator">|</span>
+                <span>Published on November 7, 2023</span>
               </p>
-              <p>
-                They are not quite the same thing, but the perception that they
-                are can sometimes lead to some confusion. So I thought it would
-                be worth writing a piece to explain the difference.
-              </p>
-              <figure>
-                <img
-                  src="/placeholder.svg"
-                  alt="Cover image"
-                  width="1250"
-                  height="340"
-                  class="aspect-video overflow-hidden rounded-lg object-cover"
-                />
-                <figcaption class="text-center">AI vs ML</figcaption>
-              </figure>
-              <p>
-                Both terms crop up very frequently when the topic is Big Data,
-                analytics, and the broader waves of technological change which
-                are sweeping through our world.
-              </p>
-            </article>
-            <div class="mt-12">
-              <h2 class="text-3xl font-extrabold tracking-tight lg:text-4xl">
-                Other Articles
-              </h2>
-              <ul
-                class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-6"
-              >
-                <li>
-                  <a
-                    class="block p-4 border rounded-lg hover:bg-gray-100"
-                    href="#"
-                  >
-                    <h3 class="text-xl font-bold">Article 1</h3>
-                    <p class="mt-2 text-sm text-gray-500">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="block p-4 border rounded-lg hover:bg-gray-100"
-                    href="#"
-                  >
-                    <h3 class="text-xl font-bold">Article 2</h3>
-                    <p class="mt-2 text-sm text-gray-500">
-                      Sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="block p-4 border rounded-lg hover:bg-gray-100"
-                    href="#"
-                  >
-                    <h3 class="text-xl font-bold">Article 3</h3>
-                    <p class="mt-2 text-sm text-gray-500">
-                      Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                      laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                  </a>
-                </li>
-              </ul>
             </div>
+            <p>
+              Artificial Intelligence (AI) and Machine Learning (ML) are two
+              very hot buzzwords right now, and often seem to be used
+              interchangeably.
+            </p>
+            <p>
+              They are not quite the same thing, but the perception that they
+              are can sometimes lead to some confusion. So I thought it would be
+              worth writing a piece to explain the difference.
+            </p>
+            <figure class="article-figure">
+              <img
+                src="/placeholder.svg"
+                alt="Cover image"
+                class="figure-image"
+              />
+              <figcaption class="figcaption">AI vs ML</figcaption>
+            </figure>
+            <p>
+              Both terms crop up very frequently when the topic is Big Data,
+              analytics, and the broader waves of technological change which are
+              sweeping through our world.
+            </p>
+          </article>
+
+          <div class="other-articles">
+            <h2 class="other-articles-title">Other Articles</h2>
+            <ul class="articles-list">
+              <li>
+                <a class="article" href="#">
+                  <h3 class="article-title">Article 1</h3>
+                  <p class="article-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a class="article" href="#">
+                  <h3 class="article-title">Article 2</h3>
+                  <p class="article-description">
+                    Sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a class="article" href="#">
+                  <h3 class="article-title">Article 3</h3>
+                  <p class="article-description">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </a>
+              </li>
+            </ul>
           </div>
-        </section>
-      </main>
-      <footer>
-        <div class="container px-4 md:px-6 flex items-center justify-between">
-          <div class="text-lg font-bold">&copy; 2023 Our University</div>
-          <nav class="flex space-x-4">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Contact Us</a>
-          </nav>
         </div>
-      </footer>
-    </div>
+      </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-text">© 2023 Our University</div>
+        <nav class="footer-nav">
+          <a class="footer-link" href="#">Privacy Policy</a>
+          <a class="footer-link" href="#">Terms of Service</a>
+          <a class="footer-link" href="#">Contact Us</a>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
