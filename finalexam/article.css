@@ -86,12 +86,14 @@
   font-weight: 800;
   line-height: 1.25;
   margin-bottom: 24px;
+  color: #0c2e86;
 }
 
 .articles-list {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 24px;
+  list-style-type: none;
 }
 
 .article {
@@ -130,5 +132,47 @@
   }
   .articles-list {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.footer {
+  width: 100%;
+  background-color: #0c2e86;
+  color: white;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.footer-container {
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #e2e8f0;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }

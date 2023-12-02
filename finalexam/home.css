@@ -53,10 +53,13 @@
 .carousel-button-right {
   position: absolute;
   top: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: white;
-  padding: 8px;
   border-radius: 50%;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   transform: translateY(-50%);
 }
 
@@ -104,7 +107,7 @@
 }
 
 .link-item:hover {
-  color: #1a3d75;
+  color: #c7c7c7;
   transition: color 0.3s;
 }
 
@@ -115,58 +118,78 @@
   padding-right: 16px;
 }
 
-.section-title {
-  font-size: 48px; /* Adjusted for larger screens, baseline: 3xl */
+.article-section {
+  width: 100%;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: white;
+}
+
+.article-container {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.article-heading {
+  font-size: 72px;
   font-weight: bold;
-  line-height: normal; /* This replaces 'none' from original Tailwind class */
   color: #0c2e86;
   margin-bottom: 32px;
   letter-spacing: -0.05em;
 }
 
-@media (min-width: 640px) {
-  .container {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-  .section-title {
-    font-size: 56px; /* sm:text-4xl */
-  }
+.article-tabs {
+  margin-bottom: 32px;
+  justify-content: flex-start;
+  background-color: transparent;
 }
 
-@media (min-width: 768px) {
-  .container {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-  .section-title {
-    font-size: 64px; /* md:text-5xl */
-  }
-  .articles-section {
-    padding-top: 96px;
-    padding-bottom: 96px;
-  }
+.article-tabslist {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start;
+  background-color: transparent;
+  border: none;
+  color: #0c2e86;
 }
 
-@media (min-width: 1024px) {
-  .container {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-  .section-title {
-    font-size: 72px; /* lg:text-6xl */
-  }
-  .articles-section {
-    padding-top: 128px;
-    padding-bottom: 128px;
-  }
+.article-tabstrigger {
+  color: #0c2e86;
 }
 
-@media (min-width: 1280px) {
-  .articles-section {
-    padding-top: 192px;
-    padding-bottom: 192px;
-  }
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.article-item {
+  padding: 8px;
+}
+
+.article-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.article-date {
+  color: #6b7280;
+}
+
+.article-separator {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.article-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
 }
 
 /* 푸터 */
