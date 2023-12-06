@@ -23,13 +23,11 @@
 
 .carousel-slides {
   display: flex;
-  transition: all 0.5s ease-in-out;
 }
 
 .carousel-image {
-  aspect-ratio: 1200 / 400;
   object-fit: cover;
-  width: 1200px; /* Assuming fixed width for each image */
+  width: 1200px;
   height: 400px;
 }
 
@@ -45,7 +43,7 @@
 .indicator {
   height: 8px;
   width: 8px;
-  background-color: #a0aec0; /* gray-300 */
+  background-color: #a0aec0;
   border-radius: 50%;
 }
 
@@ -72,7 +70,7 @@
 }
 
 .arrow-icon {
-  color: #1a202c; /* text-gray-900 */
+  color: #1a202c;
 }
 
 /* 퀵링크 */
@@ -86,7 +84,7 @@
 
 .quick-links-title {
   font-size: 36px;
-  font-weight: 800;
+  font-weight: bold;
   margin-bottom: 16px;
 }
 
@@ -102,7 +100,6 @@
   font-size: 18px;
   font-weight: 600;
   border-radius: 4px;
-  background-color: transparent;
   text-decoration: none;
 }
 
@@ -127,44 +124,38 @@
 
 .article-container {
   width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .article-heading {
-  font-size: 72px;
+  font-size: 36px;
   font-weight: bold;
   color: #0c2e86;
   margin-bottom: 32px;
-  letter-spacing: -0.05em;
 }
 
 .article-tabs {
   margin-bottom: 32px;
   justify-content: flex-start;
-  background-color: transparent;
 }
 
 .article-tabslist {
   display: flex;
   gap: 16px;
   justify-content: flex-start;
-  background-color: transparent;
   border: none;
   color: #0c2e86;
 }
 
 .article-tabstrigger {
   color: #0c2e86;
-}
-
-.article-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  padding: 4px 6px;
 }
 
 .article-item {
   padding: 8px;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .article-content {
@@ -174,64 +165,17 @@
 
 .article-title {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: bold;
+  text-decoration: none;
+  color: #1b1269;
 }
 
 .article-date {
   color: #6b7280;
 }
 
-.article-separator {
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-
 .article-navigation {
   display: flex;
   justify-content: space-between;
   margin-top: 16px;
-}
-
-/* 푸터 */
-
-.footer {
-  width: 100%;
-  background-color: #0c2e86;
-  color: white;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-.footer-container {
-  padding-left: 16px;
-  padding-right: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.footer-text {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.footer-nav {
-  display: flex;
-  gap: 16px;
-}
-
-.footer-link {
-  color: white;
-  text-decoration: none;
-}
-
-.footer-link:hover {
-  color: #e2e8f0;
-}
-
-@media (min-width: 768px) {
-  .footer-container {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
 }

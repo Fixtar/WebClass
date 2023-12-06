@@ -10,125 +10,89 @@
   <body>
     <header class="header">
       <div class="logo-container">
-        <div class="logo"></div>
+        <div class="logo"><img src="./resources/logo.png" /></div>
         <h1 class="title">Our University</h1>
       </div>
       <nav class="navigation">
         <a class="nav-link" href="#">Home</a>
-        <a class="nav-link" href="#">App 1</a>
-        <a class="nav-link" href="#">App 2</a>
-        <button class="nav-button">
-          <button class="language-selector">
-            <span>English</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="icon"
-              aria-hidden="true"
-            >
-              <path d="m6 9 6 6 6-6"></path>
-            </svg>
-          </button>
+        <a class="nav-link" href="#">공지사항</a>
+        <a class="nav-link" href="#">교수진</a>
+        <a class="nav-link" href="#">학부</a>
+        <button class="language-selector">
+          <span>English</span>
+          &or;
         </button>
       </nav>
     </header>
 
     <main>
-      <section class="">
-        <div class="container">
-          <a class="back-link" href="#">
-            <svg
-              class="back-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="m12 19-7-7 7-7"></path>
-              <path d="M19 12H5"></path>
-            </svg>
-            Back to Articles
-          </a>
-          <article class="article-content">
-            <div class="article-header">
-              <h1 class="article-title">2022 학위 수여식</h1>
-              <p class="article-meta">
-                <span>컴퓨터 정보 공학부</span>
-                <span class="separator">|</span>
-                <span>2022 02 17</span>
-              </p>
-            </div>
-            <p>
-              ‘2022년 봄 가톨릭대 학위수여식’이 2월 17일(목) 성심교정
-              콘서트홀에서 열렸다. 이번 학위수여식에서는 △학사 1,041명 △석사
-              220명 △박사 16명이 학위를 받았다.
+      <div class="container">
+        <article class="article-content">
+          <a class="back-link" href="./home.html"> &lt; 홈으로 돌아가기 </a>
+          <div class="article-header">
+            <h1 class="article-title">2022 학위 수여식</h1>
+            <p class="article-meta">
+              <span>컴퓨터정보공학부</span>
+              <span class="separator">|</span>
+              <span>2022-02-17</span>
             </p>
-            <p>
-              한편, 이번 학위수여식은 코로나19 확산 방지를 위해 코로나 백신 접종
-              완료자에 한해 진행되는 등 방역 수칙에 따라 진행됐다.
-            </p>
-            <figure class="article-figure">
-              <img
-                src="https://cukadmin.catholic.ac.kr/common/image.do?imgPath=board/166/thumbnail&imgName=37019_1.jpeg&imgGubun=F"
-                alt="Cover image"
-                class="figure-image"
-              />
-            </figure>
-          </article>
-
-          <div class="other-articles">
-            <h2 class="other-articles-title">Other Articles</h2>
-            <ul class="articles-list">
-              <li>
-                <a class="article" href="#">
-                  <h3 class="article-title">Article 1</h3>
-                  <p class="article-description">첫번째 아티클</p>
-                </a>
-              </li>
-              <li>
-                <a class="article" href="#">
-                  <h3 class="article-title">Article 2</h3>
-                  <p class="article-description">
-                    Sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
-                </a>
-              </li>
-              <li>
-                <a class="article" href="#">
-                  <h3 class="article-title">Article 3</h3>
-                  <p class="article-description">
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
-                </a>
-              </li>
-            </ul>
           </div>
+          <p>
+            ‘2022년 봄 가톨릭대 학위수여식’이 2월 17일(목) 성심교정 콘서트홀에서
+            열렸다. 이번 학위수여식에서는 △학사 1,041명 △석사 220명 △박사 16명이
+            학위를 받았다.
+            <br />
+            한편, 이번 학위수여식은 코로나19 확산 방지를 위해 코로나 백신 접종
+            완료자에 한해 진행되는 등 방역 수칙에 따라 진행됐다.
+          </p>
+          <figure class="article-figure">
+            <img
+              src="https://cukadmin.catholic.ac.kr/common/image.do?imgPath=board/166/thumbnail&imgName=37019_1.jpeg&imgGubun=F"
+              alt="Cover image"
+              class="figure-image"
+            />
+          </figure>
+        </article>
+
+        <div class="other-articles">
+          <h2 class="other-articles-title">다른 글</h2>
+          <ul class="articles-list">
+            <li>
+              <a class="article" href="#">
+                <h3 class="article-title">2023 졸업 시험 안내</h3>
+                <p class="article-description">
+                  2023 2학기 졸업 시험 안내입니다
+                </p>
+              </a>
+            </li>
+            <li>
+              <a class="article" href="#">
+                <h3 class="article-title">2023 졸업 대체 서류 제출 안내</h3>
+                <p class="article-description">
+                  2023 졸업 대체 서류 제출 안내입니다
+                </p>
+              </a>
+            </li>
+            <li>
+              <a class="article" href="#">
+                <h3 class="article-title">2023 ICPC 대회 일정 안내</h3>
+                <p class="article-description">
+                  2023 ICPC 대회 일정을 안내드립니다
+                </p>
+              </a>
+            </li>
+          </ul>
         </div>
-      </section>
+      </div>
     </main>
 
-    <!-- 푸터 -->
     <footer class="footer">
       <div class="footer-container">
-        <div class="footer-text">© 2023 Our University</div>
+        <div class="footer-text">© 2023 가톨릭대학교 컴퓨터정보공학부</div>
         <nav class="footer-nav">
-          <a class="footer-link" href="#">Privacy Policy</a>
-          <a class="footer-link" href="#">Terms of Service</a>
-          <a class="footer-link" href="#">Contact Us</a>
+          <a class="footer-link" href="#">개인정보처리방침</a>
+          <a class="footer-link" href="#">이메일무단수집거부</a>
+          <a class="footer-link" href="#">홈페이지 건의사항</a>
         </nav>
       </div>
     </footer>

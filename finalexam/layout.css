@@ -8,6 +8,10 @@ body {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* 헤더 */
 .header {
   display: flex;
@@ -78,4 +82,41 @@ body {
   height: 16px;
   width: 16px;
   opacity: 0.5;
+}
+
+/* 푸터 */
+
+.footer {
+  width: 100%;
+  background-color: #0c2e86;
+  color: white;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.footer-container {
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #e2e8f0;
 }
